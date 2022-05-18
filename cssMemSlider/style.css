@@ -162,7 +162,7 @@ display: none;
         flex-direction: column-reverse;
         width: 95vw;
         height: 40vh;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
     }
     
@@ -178,8 +178,13 @@ display: none;
 
     .text__container{
         align-self: flex-start;
-        height: 20vh;
+        font-size: 3vh;
+        height: fit-content;
+    }
 
+    .text-body,
+    .text{
+        height: fit-content;
     }
     
     img {
@@ -187,8 +192,15 @@ display: none;
     }
 
     .controls {
-        height: 50px;
-        margin-bottom: 4vh;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.controls label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .controls label {
